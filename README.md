@@ -6,7 +6,7 @@ The hypotheses considered is that churn is driven by the customers’ price sens
 
 
 Files attached include:
-- [EDA and Data Cleaning]
-- [Feature Engineering]
-- [Modelling and Evaluation]
+- EDA and Data Cleaning
+- Feature Engineering
+- Modelling and Evaluation
 
