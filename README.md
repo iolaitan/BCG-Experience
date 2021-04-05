@@ -1,4 +1,4 @@
-# Open-Access Data Science & Advanced Analytics - PowerCo
+# Open-Access Data Science & Advanced Analytics - energy company
 
 A major gas and electricity utility that corporate, SME and residential customers. Tasked with diagnosing the source of churning SME customers. 
 
