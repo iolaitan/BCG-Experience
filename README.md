@@ -22,5 +22,7 @@ From the data collected, Exploratory Data Analysis was conducted where the data 
 * For predictions, binary classification model was created using the XGBoost Model (XGBClassifier).
 
 The model created was able to predict customer churn
+
 The hypothesis was rejected as the model showed that customer price sensitivity is not the main driver of churn
+
 Feature importance graph showed that yearly consumption, forecasted bill of meter over next 12 months, net margin and dates of last modification to products are the 4 largest drivers of customer churn
