@@ -1,0 +1,26 @@
+EDA – what is the data showing?
+
+1.	The highest number of churn with regards to the sales channel shows that the ‘foods..’ channel customers have churned the highest
+2.	The churn rate for the gas and electricity is 9.72%
+3.	Churn in the ‘lxidp’ Origin channel is higher than the other origin/offer channels 
+
+Data cleaning and transformation:
+
+
+
+Feature Engineering: 
+When creating models, a number of new features can be created using characteristics relating to customer engagement, customer demographics, products, pricing as well as customer satisfaction data, if available.
+
+-	How can churn data changed over the years? Has it increased lately or decreased overtime? 
+-	Tenure: loyal vs new customers – which customers tend to churn more?
+
+
+
+
+Modelling
+The objective of the model is to determine if churn is driven by the customers price sensitivities and that it would be possible to predict customers likely to churn using a binary classification model as a predictive model; where the potential outcome will either be churned (1) or not churned (0).
+
+
+Questions – how did they determine which is the SME data?
+
+
