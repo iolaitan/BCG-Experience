@@ -2,18 +2,32 @@ EDA – what is the data showing?
 
 1.	The highest number of churn with regards to the sales channel shows that the ‘foods..’ channel customers have churned the highest
 2.	The churn rate for the gas and electricity is 9.72%
-3.	Churn in the ‘lxidp’ Origin channel is higher than the other origin/offer channels 
+3.	Churn in the ‘lxidp’ Origin channel is higher than the other origin/offer channels
+4.  There is a similar churn rate between the customers who are also gas clients and those who are not
+5.  The customer who have over a ... number of additional products churned less than customers who have only up to ... number of additional products.
+6.  Price data: the line chart of the price data for gas and electricity during the peak periods (P1) show that the price movements of utilities have been increasing overall, with a slight dip in .....
+
+7. Visualise the price data maybe yearly/quarterly to show the negative values in the data.
+7b.  Also plot the forecast data against the actual data - highlight the point of the forecast that led to increase in customer churn
+
+8.  When did majority of our customers join?
+
+9.  Which time period saw the highest number of customer leaving?
+
+10. Bivariate plot for price vs churn? - use a correlation matrix to evaluate the relationship betweeen price and if a customer churned or not
+
+11. Plot 
 
 Data cleaning and transformation:
 - Data types
+
 - Missing values - (Customer Data) - there were a number of columns that had over 75% of thedata missing, with one field 'campaign_disc_element' with 100% missing data (implying an empty column). This discovery in the
 exploratory stage allows for appropriate planning on how to deal with missing values.
-There were some columns a small percentage of missing values in the columns. For the columns with over 75% of missing data, these records were removed and the other columns with a low % of missing values, the missing values were imputed using the median
+There were some columns a small percentage of missing values in the columns. For the columns with over 75% of missing data, these records were removed and the other columns with a low % of missing values, the missing values were imputted using the median values.
 
-From the above output we can see that there are a number of columns that have over 75% of the data missing. We can also see here that the column campaign_disc_ele has 100% of the data missing; this confirms the empty column discovery in the descriptive statistics step.
-The above output shows that there is a low % of missing values in the data. In this case, we will replace these missing values with approxomates in the data transformation stage.
+- Change formatting of the dates to from object to datetime
 
-
+- Negative data - 
 
 
 Feature Engineering: 
@@ -22,6 +36,7 @@ When creating models, a number of new features can be created using characterist
 -	How can churn data changed over the years? Has it increased lately or decreased overtime? 
 -	Tenure: loyal vs new customers – which customers tend to churn more?
 
+Tenure was calculated in the data visua
 
 
 
@@ -30,5 +45,5 @@ The objective of the model is to determine if churn is driven by the customers p
 
 
 Questions – how did they determine which is the SME data?
-How did they apply the discount? 
+**How did they apply the discount?**
 
