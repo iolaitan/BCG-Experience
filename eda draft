@@ -50,13 +50,18 @@ The highly skewed data was transformed using log transformation. Log transformat
 As a result, the histograms for margins and consumptions were re-done and distributions are more distributed; much closer to normal distributions
 However, the box plots show that there are still more outliers in the data which needed to be dealt with.
 
-To deal with the outliers, these vlaues can either be replaced with the mean (excluding averages) or removed. Removing outliers works well for large datasets and so in this case the outliers were replaced with the average.
+To deal with the outliers, these vlaues can either be replaced with the mean (excluding averages), median or removed. Removing outliers works well for large datasets and so in this case the outliers were replaced with the median.
+The median imputation was used as the mena is hevaily influenced by the mean.
+
+To predict the target categorical variable, it would need to be tranformed using one-hot encoding
+The dependent variables also need to be encoded into numerical data
 
 
-Mutlicollinearity; 
+Mutlicollinearity; the correlation matrix is used to depict which variables are highly correlated with the target varbales.
+calculate correlaton matrix for the customer data and price data against churn.
 
-
-
+Train/Test Split: 
+80% train, 20% test
 
 Modelling
 The objective of the model is to determine if churn is driven by the customers price sensitivities and that it would be possible to predict customers likely to churn using a binary classification model as a predictive model; where the potential outcome will either be churned (1) or not churned (0).
