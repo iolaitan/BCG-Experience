@@ -27,7 +27,13 @@ There were some columns a small percentage of missing values in the columns. For
 
 - Change formatting of the dates to from object to datetime
 
-- Negative data - 
+- Negative data - there were minimum values for consumption, forecasts and margins. Interpreting these values, the negative consumption, forecast and margin values would mean that the cleint'a SME companies are suppliers, producing their own energy and supplying to PowerCo the supplier.
+There are also negative prices in data which could represent refunds? or credits on account? or could simply be data input error. 
+
+
+Descriptive statistics: 
+- The consumption data histograms and box plots show that we have highly skewed data (rightly skewed) and a number of outliers.
+- The margins data also has a high number of outliers in the records for margins. 
 
 
 Feature Engineering: 
@@ -36,7 +42,19 @@ When creating models, a number of new features can be created using characterist
 -	How can churn data changed over the years? Has it increased lately or decreased overtime? 
 -	Tenure: loyal vs new customers – which customers tend to churn more?
 
-Tenure was calculated in the data visua
+Tenure was calculated in the data visualisations step and can be used as a feature for modelling
+
+
+Data Transformation: 
+The highly skewed data was transformed using log transformation. Log transformation does not work with negative data and 0's.
+As a result, the histograms for margins and consumptions were re-done and distributions are more distributed; much closer to normal distributions
+However, the box plots show that there are still more outliers in the data which needed to be dealt with.
+
+To deal with the outliers, these vlaues can either be replaced with the mean (excluding averages) or removed. Removing outliers works well for large datasets and so in this case the outliers were replaced with the average.
+
+
+Mutlicollinearity; 
+
 
 
 
